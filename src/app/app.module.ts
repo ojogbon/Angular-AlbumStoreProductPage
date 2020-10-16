@@ -12,19 +12,20 @@ import { ProductTracklistingComponent } from './product-tracklisting/product-tra
 import { ProductListComponent } from './product-list/product-list.component';
 import { from } from 'rxjs/observable/from';
 
-export const appRoutes : Routes = [{
-  path : 'products',
-  component : ProductListComponent
-},
-{
-  path : 'products/:id',
-  component : ProductPageComponent
-},
-{
-  path : '',
-  redirectTo : "products",
-  pathMatch : "full"
-}
+const appRoutes : Routes = [
+    {
+      path : 'products',
+      component : ProductListComponent
+    },
+    {
+      path : 'products/:id',
+      component : ProductPageComponent
+    },
+    {
+      path : '',
+      redirectTo : "products",
+      pathMatch : "full"
+    }
 ] ;
 
 
